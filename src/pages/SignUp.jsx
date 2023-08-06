@@ -19,7 +19,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const createAccount = async () => {
-    const promise = account.create(ID.unique(), email, password);
+    const promise = account.create(ID.unique(), email, password, name);
 
     promise  
       .then(() => {   //if promise fulfilled, navigate to the home page
@@ -43,6 +43,7 @@ const Signup = () => {
       password={password}
       setEmail={setEmail}
       setPassword={setPassword}
+      setName={setName}
     />
   );
 };

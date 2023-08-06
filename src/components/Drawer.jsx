@@ -24,7 +24,7 @@ const Drawer = ({children}) => {
   useEffect(()=>{
     const fetchCD=async()=>{
     const user=await getCurrentUser();
-    console.log(user);
+    if(!user) return;
     const promise= databases.listDocuments(
       "64ce4b1f184498131289",
       "64ce4b27947a60b741b5",
