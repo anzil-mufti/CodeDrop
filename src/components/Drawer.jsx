@@ -59,7 +59,7 @@ const Drawer = ({children}) => {
         </Link>
         <hr/>
         <li className="bg-base-100 rounded-lg">
-            <a>index.html</a>
+            {/* <a>index.html</a> */}
         </li>
         {codeDrops.map(codeDrop=>{
           return(
